@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue JS Links</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+
+		<p>
+			{{ title }} <br>
+			Link 1: <a v-bind:href="link">Google Accounts</a>
+		</p>
+	</div>
+	<script>
+		new Vue({
+
+			el: '#app',
+			data: {
+
+				title: 'Hello World',
+				link: 'https://accounts.google.com'
+			}
+
+		});
+	</script>
+</body>
+</html>
